@@ -1,0 +1,12 @@
+import platform
+
+def get_system_info():
+    os_name=platform.system()
+    os_version=platform.release()
+    print("isletim sistemi",os_name)
+    print("sürüm",os_version)
+    processor=platform.processor()
+    architecture=platform.architecture()
+    print("islemci",processor)
+    print("mimari",architecture)
+get_system_info()
